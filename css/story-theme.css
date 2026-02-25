@@ -1,2 +1,83 @@
-                              
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Share+Tech+Mono&family=Oswald:wght@300;400;600&display=swap');
+
+:root {
+
+  /*PALETA DE COLORES SEMÁNTICA*/
+
+  /* Colores principales */
+  --color-primary: #e8c547;       
+  --color-secondary: #4a9ebb;     
+  --color-accent: #c0392b;     
+  
+  
+
+  /*ESTADOS CROMÁTICOS DE LA NARRATIVA */
+
+  /* Estado 1: Inicio */
+  --bg-inicio: #1a1a2e;
+  --bg-inicio-secondary: #16213e;
+  --text-inicio: #c8c8d4;
+  --border-inicio: #2d2d4e;
+
+  /* Estado 2: Decisión */
+  --bg-decision: #0d1f1a;
+  --bg-decision-secondary: #0a1a14;
+  --text-decision: #a8c4a0;
+  --border-decision: #1a3d2e;
+
+  /* Estado 3: Final bueno */
+  --bg-final-positivo: #0f1f35;
+  --bg-final-positivo-secondary: #0a1628;
+  --text-final-positivo: #a0b8d0;
+
+  /* Estado 4: Final neutro  */
+  --bg-final-neutro: #1c1c1c;
+  --bg-final-neutro-secondary: #141414;
+  --text-final-neutro: #a0a0a0;
+
+  /* Estado 5: Final malo*/
+  --bg-final-negativo: #1f0a0a;
+  --bg-final-negativo-secondary: #150505;
+  --text-final-negativo: #c08080;
+
+
+
+  /* TIPOGRAFÍA */
+  --font-heading: 'Oswald', sans-serif;        
+  --font-body: 'Crimson Text', serif;          
+  --font-interactive: 'Share Tech Mono', monospace; 
+
+
+
+  /* Tamaños de fuente */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1.125rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2.5rem;
+  --font-size-xxl: 3.5rem;
+
+
+
+  /*  ESPACIADO  */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
+
+
+
+  /* ANIMACIONES*/
+  --transition-fast: 200ms ease-in-out;
+  --transition-normal: 400ms ease-in-out;
+  --transition-slow: 600ms ease-in-out;
+
+
+
+  /* BORDES Y SOMBRAS */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 15px rgba(232, 197, 71, 0.3);
+}                              
                                       

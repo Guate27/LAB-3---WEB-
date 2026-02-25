@@ -1,0 +1,83 @@
+@import url('../css/story-theme.css');
+
+/* RESET para borrar la configuración predefinida e implementada por el navegador  */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* APLICACIÓN DE ESTILO A CADA COMPONENTE DE LOS HTML */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  background-color: var(--bg-inicio);
+  color: var(--text-inicio);
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  max-width: 70ch;
+}
+
+strong, b {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+img {
+  border: 1px solid var(--border-inicio);
+  max-width: 500px;
+  margin: var(--spacing-md) auto;
+}
+
+footer {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-sm);
+  text-align: center;
+  font-family: var(--font-interactive);
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary);
+  border-top: 1px solid var(--border-inicio);
+  opacity: 0.6;
+}
