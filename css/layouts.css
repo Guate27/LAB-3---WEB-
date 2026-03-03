@@ -1,0 +1,121 @@
+@import url('../css/story-theme.css');
+
+/* 
+   ESTRUCTURA GENERAL DE CADA PÁGINA
+   Utilicé Grid para definir las 3 zonas principales: header, main y footer
+  */
+
+.page-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+  gap: var(--spacing-md);
+}
+
+/* DEFINICIÓN DE ZONAS GRID */
+
+.page-container header {
+  grid-area: header;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--spacing-sm);
+}
+
+.page-container main {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.page-container footer {
+  grid-area: footer;
+}
+
+/* CONTENEDOR DE DECISIONES
+   Utilicé Flexbox para organizar los botones*/
+
+.choices-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* ESTADOS CROMÁTICOS POR PÁGINA
+   Cada estado cambia el color de fondo*/
+
+/* Páginas de inicio y camino vagabundo */
+.state-inicio {
+  background-color: var(--bg-inicio);
+  color: var(--text-inicio);
+}
+
+/* Páginas de decisión e interrogatorio */
+.state-decision {
+  background-color: var(--bg-decision);
+  color: var(--text-decision);
+}
+
+.state-decision header {
+  border-bottom-color: var(--color-secondary);
+}
+
+/* Final bueno */
+.state-final-positivo {
+  background-color: var(--bg-final-positivo);
+  color: var(--text-final-positivo);
+}
+
+.state-final-positivo header {
+  border-bottom-color: var(--color-secondary);
+}
+
+/* Final neutro */
+.state-final-neutro {
+  background-color: var(--bg-final-neutro);
+  color: var(--text-final-neutro);
+}
+
+.state-final-neutro header {
+  border-bottom-color: var(--color-secondary);
+  opacity: 0.6;
+}
+
+/* Final malo */
+.state-final-negativo {
+  background-color: var(--bg-final-negativo);
+  color: var(--text-final-negativo);
+}
+
+.state-final-negativo header {
+  border-bottom-color: var(--color-accent);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .page-container {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+
+  .choices-container {
+    flex-direction: column;
+  }
+
+
+/* IMAGEN DE CADA PÁGINA*/
+.story-image {
+  width: 100%;
+  max-width: 500px;
+  margin: var(--spacing-md) 0 !important;
+  display: block;
+}
+}

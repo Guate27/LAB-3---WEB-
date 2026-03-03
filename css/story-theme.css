@@ -43,7 +43,7 @@
 
 
   /* TIPOGRAFÍA */
-  --font-heading: 'Oswald', sans-serif;        
+  --font-titles: 'Oswald', sans-serif;        
   --font-body: 'Crimson Text', serif;          
   --font-interactive: 'Share Tech Mono', monospace; 
 
@@ -54,7 +54,7 @@
   --font-size-base: 1.125rem;
   --font-size-lg: 1.5rem;
   --font-size-xl: 2.5rem;
-  --font-size-xxl: 3.5rem;
+  --font-size-h1: 3.5rem;
 
 
 

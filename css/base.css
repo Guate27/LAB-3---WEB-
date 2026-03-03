@@ -36,8 +36,8 @@ body {
 }
 
 h1 {
-  font-family: var(--font-heading);
-  font-size: var(--font-size-xxl);
+  font-family: var(--font-titles);
+  font-size: var(--font-size-h1);
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-titles);
   font-size: var(--font-size-lg);
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -68,7 +68,9 @@ strong, b {
 img {
   border: 1px solid var(--border-inicio);
   max-width: 500px;
-  margin: var(--spacing-md) auto;
+  height: auto;
+  display: block;
+  margin: var(--spacing-md) 0;
 }
 
 footer {
