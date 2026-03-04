@@ -1,4 +1,5 @@
 Intructions 
+
 In this repository, you will find an interactive story where you must make various decisions to help the protagonist reach an ending that you deem appropriate.
 
 Getting Started
